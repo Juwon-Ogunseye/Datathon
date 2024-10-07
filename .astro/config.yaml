@@ -1,0 +1,9 @@
+project:
+    name: prediction-hackathon
+webserver:
+  port: 8081
+postgres:
+  port: 1212
+
+env:
+  - MOTHERDUCK_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9ndW5zZXllbWljaGVhbEBnbWFpbC5jb20iLCJzZXNzaW9uIjoib2d1bnNleWVtaWNoZWFsLmdtYWlsLmNvbSIsInBhdCI6ImZlbnpTR2hkY2VUNnFORkFEZmVZMU53TU9YY1ZWdm4zaTZycXB0ZkVJQVEiLCJ1c2VySWQiOiI2MTA4NTZhNy1kNGU3LTQwNGYtOTMwNy04ODJjZjljOWE2M2YiLCJpc3MiOiJtZF9wYXQiLCJpYXQiOjE3MjgwNTY1NzR9.WRErgOWWh4sddlfDhGVAKHoauXgxRS1YRXc3xkjUA0o

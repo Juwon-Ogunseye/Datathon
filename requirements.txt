@@ -1,0 +1,5 @@
+gspread
+oauth2client
+duckdb
+airflow-provider-duckdb
+astro-sdk-python[duckdb]
