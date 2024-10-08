@@ -146,3 +146,116 @@ Monitor and run your DAGs from the web interface.
 
 By following the above instructions, you should have the project up and running locally. The system will automatically update the student performance data, teacher data, and parental sentiment, which will provide insights into student success and help identify areas of improvement.
 
+# Data Science and Machine Learning
+The data prepared were faetched directly into a Jupyter notebook, for model training.
+
+### Data explanation
+There are three datasets, each from a different table extracted from the DB.<br>
+The datasets are:
+* Student performance data
+* Student profile data
+* Teachers' data
+
+Each will be explained with the data overview seem so far, more insights will be obtained later on in the notebook
+#### Student performance data
+This dataset includes names of 40 students from a school in Nigeria, their test scores in certain subjects looked into, it also informed us of the gender of the students
+
+***Descision:*** The scores can be merged together to get the overall average score of each student, names data removed, as they are neither relevant to the analysis, nor to the model to be built. The gender column should remain, unless otherwise necessary.
+
+#### Student profile data
+This dataset includes student names, average scores, and gender (all can be found in the first data) with more columns that are beneficial to model building and EDA in general.
+
+***Decision:*** Once it is ascertained that the average score here matches with the average score that is intended to be calculated from the first data, then, all the information in the first data can be ignored as they have been repeated in the second data with more relevant columns, even. Otherwise, it (the intended average) will still be calculated and added to the second dataset. This data will be used for model training, to predict students' performance based on their data.
+
+#### Teachers' data
+This dataset contains information about 20 teachers in the same school as the sample students, it has information regarding their names, years of experience, and many more relevant columns, good for insights to help the school improve students performance, but model training is not necessary.
+
+***Decision:*** This data is good to find some valuable insights on what to improve on, but no model training is required.
+
+### ML
+A machine learning classification model is then devoloped based on the student profile data and exam data.
+The details can be found in the used [Jupyter Notebook](./dfa-DS/DFA24%20model%20notebook.ipynb)<br>
+
+Also, the model is deployed using [streamlit](https://streamlit.io), the deployed app can be accessed [here](https://dfa24-students-performance-lambda.streamlit.app).
+
+### AI solution
+It is recommended that the school helps their students improve their overall performance, to that end, an AI application has also been deployed containing several solutions in one single app. The details of the app can be found below:
+
+Live URL of developed app: https://edu-lambdified.streamlit.app/<br>
+This is an AI solution to some of the problems faced by students in school. It focuses on five solutions:
+1. Chat with Youtube videos
+2. Summarize documents and download
+3. Actively Practice documents with AI
+4. Calculate GPA and get AI guidance
+5. Capture and Ask
+### 1. **Chat with Youtube videos**
+###### About
+This AI soloution makes use of Youtube video URL to obtain the video transcript, then processes it, to provide a custom question-answering AI chatbot. It also add the video summary on the side bar, just so users can have an idea on what questions to ask.
+###### Use case
+It saves one the stress of having to watch an entire video just to find a simple information.
+
+###### Future additions
+* Being able to upload your own video file to do just the same thing.
+* Support longer videos
+
+###### Sample
+https://github.com/user-attachments/assets/78fb0e7f-4ab0-4c5f-ba5a-8afb1e020255
+
+
+### 2. **Summarize documents and download (format preserved)**
+###### About
+This tool allows students (main target) or just anyone at all to be able to upload documents in (docx and pdf) format, and download a summarized version in the exact format they have uploaded.
+###### Use case
+Completing reading materials in a shorter time, while not missing the important points
+
+###### Future additions
+* Have support for more file formats (e.g pptx)
+* Have support for longer documents
+
+###### Sample
+
+https://github.com/user-attachments/assets/bcd6e97b-5e59-4850-ac99-d0c4b48448b0
+
+
+### 3. **Actively Practice documents with AI**
+###### About
+This tool allows students to practice their documents, it creates a CBT-standard simulation, where they get to test how much information they are able to remember after reading.
+
+###### Use case
+Good way to practice for exams that requires high precision answers
+
+###### Future additions
+* Support longer documents
+* Support more document formats
+
+###### Sample
+
+https://github.com/user-attachments/assets/be2ccf10-cba8-4d94-b6f0-c3d5992e6c18
+
+### 4. **Calculate GPA and get AI guidance**
+###### About
+This tool allows students to track progress by calculating their gpa/cgpa based on both 4.0 and 5.0 system, together with AI recommendation on how to get their grades up.
+It is divided into two sections:
+* New: This helps to compute GPA for a single semester
+* Old: This helps to calulculate cummulative GPA (CGPA) for all completed semesters using previous CGPA and number of units previously done.
+###### Use case
+Calculating CGPA before a new semester considering each of the new courses to be done, to be able to set minimum grade for each course, depending on a target goal. I have personally tried this in school and it helped all the time.
+
+###### Future additions
+Allow upload of result documents (pdf) or image (screenshot) to calculate CGPA.
+
+###### Sample
+
+https://github.com/user-attachments/assets/b0ca65df-fc0e-4b7c-a091-128c98d9235d
+
+
+### 5. **Capture and Ask**
+###### About
+This tool allows students to Upload images and get AI guides
+###### Use case
+This is good for when you have complicated equations and diagrams that you find hard to understand, whether in hard or soft copy materials, just capture (camera or screenshot) and ask AI, interactively.
+###### Future additions
+Allow upload of some other media files; gif, videos, ...
+###### Sample
+
+https://github.com/user-attachments/assets/81d32ac8-7826-4957-8777-b7e3a2539827
