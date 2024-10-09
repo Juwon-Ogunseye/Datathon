@@ -1,5 +1,7 @@
 # **Prediction Hackathon Project**
 
+[System Architecture](https://github.com/user-attachments/assets/bc93575d-ad16-4277-baee-2cae220881f3)
+
 This project is developed for the Prediction Hackathon competition, where we are tasked with analyzing student performance data and related metadata to draw meaningful insights about their academic progress. The goal is to develop a solution that tracks and evaluates the academic performance of students, with integration for parental involvement and teacher feedback, using various tools and frameworks.
 
 ## **Table of Contents**
