@@ -1,1 +1,6 @@
 joblib
+langchain
+langchain_google_genai
+langchain_core
+python-docx
+pypdf2
