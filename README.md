@@ -185,6 +185,7 @@ Also, the model is deployed using [streamlit](https://streamlit.io), the deploye
 * Streamlit - For creating the web interface
 
 ### AI solution
+Link to app: https://teacher-question-guide-dfa24.streamlit.app/ <br>
 It is part of the requirement to help the school help their students improve their overall performance, to that end, an AI application has also been deployed to help teachers easily set up practice sessions for students, simply by uploading relevant class document(s).
 
 ###### About
